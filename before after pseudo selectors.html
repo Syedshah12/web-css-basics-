@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before after pseudo selectors</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Orelega+One&family=Smokum&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+      
+    }
+
+    .navigation{
+        display: flex;
+    }
+    li{
+        flex-direction: column;
+        list-style: none;
+        padding: 23px 33px;
+        color: rgb(13, 13, 13);
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    section{
+        display: flex;
+color: black;
+
+height: 353px;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+margin: 3px 243px;
+text-align: center;
+font-family: 'Baloo Bhai 2', cursive;
+    }
+    h3{
+        font-size: 4rem;
+    }
+header::before{
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+}
+</style>
+<body>
+    <header>
+        <nav >
+            <ul class="navigation">
+                <li>home</li>
+                <li>about us</li>
+                <li>contact us</li>
+                <li>help</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>HELLO WORLD</h3>
+        <p>Proofreading Services UK . We offer intensive proofreading.
+            and boasts about achieving. We are very conscious o
+            judgment and knowledge in identifying errors. This is what our ...
+        </p>
+    </section>
+    <hr>
+</body>
+
+</html>
